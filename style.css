@@ -149,44 +149,46 @@ header {
     color: #363636;
     font-size: 30px;
   }
-  .marketing {
-    /* width: 100vw; */
-    height: 100vh;
-}
 .marketing-container img {
     width: 100%;
     filter: brightness(50%);
 }
+
 .marketing-content {
-    font-size: 150px;
-    height: 0px;
+    font-size: 160px;
+    /* height: 0px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
   }
   .digital {
     position: relative;
-    bottom: 580px;
+    bottom: 550px;
     font-weight: 900;
     line-height: 1em;
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
-    left: 125px;
+    /* left: 67px; */
+    z-index: 3;
   }
   
   .marketing {
     position: relative;
-    bottom: 560px;
-    left: 313px;
+    bottom: 536px;
+    left: 360px;
     font-weight: 900;
     color: white;
-    z-index: 1;
+    z-index: 5;
   }
   .blue-bg {
     background-color: #33C1FF;
-    height: 162px;
-    width: 726px;
+    height: 174px;
+    width: 760px;
     position: relative;
-    bottom: 727px;
-    left:  416px;
-    z-index: 0;
+    bottom: 714px;
+    left:  418px;
+    z-index: 1;
   }
   .what-we-do {
     display: flex;
@@ -481,7 +483,7 @@ textarea {
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
-    width: 530px;
+    width: 42vw;
     background-color: white;
     /* height: 200px; */
 }
@@ -518,8 +520,6 @@ footer {
 .footer-navs {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* width: 60%; */
     color: white;
 }
 .footer-social {
@@ -531,7 +531,6 @@ footer {
 .nav-container {
     display: flex;
     gap: 150px;
-    /* justify-content: space-evenly; */
     width: 100%;
 }
 .footer-email {
@@ -583,3 +582,47 @@ margin-right: 20px;
 .nav h3 {
     margin-bottom: 20px;
 }
+@media screen and (min-width:1007px) and (max-width: 1100px){
+    .slogan h1 {
+        font-size: 67px;
+    }
+    .slogan img {
+        width: 415px;
+    }
+    .blue-bg {
+        bottom: 603px;
+        left: 332px;
+        width: 627px;
+        height: 145px;
+    }
+    .marketing-content {
+        font-size: 130px;
+    }
+    .digital {
+        bottom: 480px;
+    }
+    .marketing {
+        left: 280px;
+        bottom: 462px;
+    }
+} 
+
+ @media  screen and (min-width:1101px) and (max-width:1200px) {
+    
+    .blue-bg {
+        bottom: 656px;
+        left: 349px;
+        width: 656px;
+        height: 149px;
+    }
+    .marketing-content {
+        font-size: 137px;
+    }
+    .digital {
+        bottom: 529px;
+    }
+    .marketing {
+        left: 290px;
+        bottom: 503px;
+    }
+} 
