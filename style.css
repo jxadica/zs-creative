@@ -346,6 +346,10 @@ header {
 .input-field:not(:last-child) {
     margin-right: 10px;
 }
+.contact-form-container input, .contact-form-container textarea {
+    outline: none;
+    border: none;
+}
 
 label {
     font-size: 12px;
